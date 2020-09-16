@@ -13,6 +13,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   grid-template-areas: "banner banner" "main main";
 }
 
@@ -22,6 +23,27 @@ img {
 
 header {
   display: contents;
+  grid-area: banner;
+  margin: 1rem;
+  position: relative;
+}
+
+header img {
+  display: block;
+}
+
+header h1 {
+  width: 14rem;
+  bottom: 0;
+  left: 0;
+}
+
+header nav {
+  top: 0;
+  right: 0;
+}
+
+/* header {
   grid-area: banner;
   display: grid;
   grid-template-columns: 14rem 1fr 1fr;
@@ -44,7 +66,7 @@ header h1 {
 header nav {
   grid-column: 3;
   grid-row: 1;
-}
+} */
 
 ul {
   display: flex;
@@ -53,6 +75,7 @@ ul {
 li {
   list-style-type: none;
   padding: 1rem;
+  font-size: 2rem;
 }
 
 li a {
@@ -66,6 +89,11 @@ main {
   grid-template-columns: 1fr 1fr;
   margin: 1rem;
   padding: 0;
+  grid-gap: 1rem;
+}
+
+figure {
+  margin: 0;
 }
 
 h2 {
